@@ -79,11 +79,16 @@ h1{
     gap: 2px;
     padding: 10px;
 }
-
+.info-nosotros{
+    gap: 20px;
+}
 .info-nosotros ul{
     list-style: none;
 }
-
+.info-nosotros ul li a{
+    text-decoration: none;
+    color: black;
+}
 .redes i{
     padding-top: 20px;
     font-size: 50px;
@@ -212,7 +217,7 @@ h1{
 }
 
 /*fin grid registro*/
-/*inicio media navegador*/
+/*inicio media 768*/
 @media(max-width:768px){
 .navegador ul{
     top: 0;
@@ -228,6 +233,7 @@ h1{
     transition: 0.5s;
 }
 .navegador .fa-bars{
+    padding: 30px;
     font-size: 30px;
     display: block;
     order: -1;
@@ -250,4 +256,16 @@ display: none;
 }
     
 }
-/*fin media navegador*/
+/*fin media 768*/
+
+/*inicio media 576*/
+@media(max-width:576px)
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+}
+.redes i{
+    font-size: 30px;
+}
+
+/*fin media 576*/
