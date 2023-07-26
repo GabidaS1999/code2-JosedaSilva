@@ -1,0 +1,253 @@
+*{
+    top: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    
+}
+h1{
+    color: black;
+    font-size: 50px;
+    
+}
+
+/*inicio navegador*/
+.navegador{
+    top:0;
+    align-items: center ;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%; 
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    
+}
+.navegador h1{
+    padding-left: 180px;
+}
+.navegador ul{
+    top: 0;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+
+.navegador ul li a {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.fa-bars{
+    display: none;
+}
+/*fin navegador*/
+
+/*inicio main*/
+    .imagen{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        margin-top: 40px;
+    }
+/*fin main*/
+
+/*Inicio pie de pagina*/
+.pie-de-pagina-registro{
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid black;
+    margin-top: 700px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2px;
+    padding: 10px;
+}
+.pie-de-pagina{
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid black;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2px;
+    padding: 10px;
+}
+
+.info-nosotros ul{
+    list-style: none;
+}
+
+.redes i{
+    padding-top: 20px;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+/*Fin pie de pagina*/
+/*inicio cartel menu*/
+.texto{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+.texto2{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+
+.cartel{
+    text-align: center;
+    display: grid;
+    background-color: green;
+    color: white;
+}
+/*fin cartel menu*/
+/*inicio menú bebidas*/
+.menu-bebidas h2{
+    display: flex;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    border-bottom: 1px solid green;
+    border-top: 1px solid green;
+    align-items: center;
+}
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.imagen-menu{
+    margin-top:45px ;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    
+}
+.menu-tarjetas{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin: 20px 20px 20px 20px;
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 200px;
+    background-color: rgb(2, 56, 2);
+}
+.menu-tarjetas a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+.imagen-menu-caliente{
+    margin-top: 50px;
+    width: 150px;
+    height: 100px ;
+}
+.imagen-menu-helado{
+    margin-top: 40px;
+    width: 80px;
+    height: 100px;
+    
+}
+/*fin menú*/
+
+/*inico menu comida*/
+.menu-comida h2{
+    display: flex;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    border-bottom: 1px solid green;
+    border-top: 1px solid green;
+    align-items: center;
+}
+.imagen-menu-comida{
+    margin-bottom:45px;
+    padding-top: 50px;
+    width: 100px;
+    height: 100px;
+}
+.imagen-menu-comida2{
+    margin-bottom:45px;
+    padding-top: 50px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/*fin menu cmida*/
+
+/*inicio grid registro*/
+.grid-padre{
+    height: 30px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: "a b b b"
+                         "a b b b"
+                         "a b b b";
+}
+.formulario-resgistro{
+    width: 300px;
+    height: 100%;
+    grid-area: a;
+}
+.imagen-grid{
+    width: 100%;
+    height: 20px;
+    grid-area: b;
+}
+
+/*fin grid registro*/
+/*inicio media navegador*/
+@media(max-width:768px){
+.navegador ul{
+    top: 0;
+    position: fixed;
+    width: 40%;
+    background-color: green;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 50px;
+    left: -800px;
+    transition: 0.5s;
+}
+.navegador .fa-bars{
+    font-size: 30px;
+    display: block;
+    order: -1;
+}
+.navegador .fa-bars:hover + ul{
+    left: 0;
+}
+.navegador ul:hover{
+    left: 0;
+}
+.navegador ul li a{
+    color: white;
+}
+
+.navegador h1 {
+        display: none;
+      }
+.imagen-grid{
+display: none;
+}
+    
+}
+/*fin media navegador*/
