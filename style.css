@@ -259,7 +259,7 @@ display: none;
 /*fin media 768*/
 
 /*inicio media 576*/
-@media(max-width:576px)
+@media(max-width:576px){
 .tarjetas{
     display: flex;
     flex-wrap: wrap;
@@ -267,5 +267,5 @@ display: none;
 .redes i{
     font-size: 30px;
 }
-
+}
 /*fin media 576*/
