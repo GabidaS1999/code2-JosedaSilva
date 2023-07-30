@@ -24,6 +24,9 @@ h1{
     border-bottom: 1px solid black;
     
 }
+.dropdown{
+    display: none;
+}
 .navegador h1{
     padding-left: 180px;
 }
@@ -44,9 +47,7 @@ h1{
     width: 50px;
     height: 50px;
 }
-.fa-bars{
-    display: none;
-}
+
 /*fin navegador*/
 
 /*inicio main*/
@@ -111,7 +112,7 @@ h1{
 .cartel{
     text-align: center;
     display: grid;
-    background-color: green;
+    background-color: rgb(209, 173, 94);
     color: white;
 }
 /*fin cartel menu*/
@@ -122,8 +123,8 @@ h1{
     padding-top: 30px;
     padding-bottom: 30px;
     margin-top: 20px;
-    border-bottom: 1px solid green;
-    border-top: 1px solid green;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
     align-items: center;
 }
 .tarjetas{
@@ -147,7 +148,7 @@ h1{
     height: 150px;
     object-fit: cover;
     border-radius: 200px;
-    background-color: rgb(2, 56, 2);
+    background-color: rgba(99, 63, 16, 0.89);
 }
 .menu-tarjetas a{
     margin-top: 10px;
@@ -174,8 +175,8 @@ h1{
     padding-top: 30px;
     padding-bottom: 30px;
     margin-top: 20px;
-    border-bottom: 1px solid green;
-    border-top: 1px solid green;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
     align-items: center;
 }
 .imagen-menu-comida{
@@ -220,32 +221,23 @@ h1{
 /*inicio media 768*/
 @media(max-width:768px){
 .navegador ul{
-    top: 0;
     position: fixed;
     width: 40%;
-    background-color: green;
+    background-color: rgb(209, 173, 94);
     height: 100vh;
-    flex-direction: column;
     justify-content: start;
-    align-items: center;
-    padding-top: 50px;
-    left: -800px;
-    transition: 0.5s;
+    top: -900px;
+   
 }
-.navegador .fa-bars{
-    padding: 30px;
+.navegador .dropdown{
     font-size: 30px;
     display: block;
     order: -1;
 }
-.navegador .fa-bars:hover + ul{
-    left: 0;
-}
-.navegador ul:hover{
-    left: 0;
-}
+
 .navegador ul li a{
     color: white;
+    margin: 0;
 }
 
 .navegador h1 {
