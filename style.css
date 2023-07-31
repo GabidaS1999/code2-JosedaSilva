@@ -7,6 +7,7 @@
     
 }
 h1{
+    margin-left: 100px;
     color: black;
     font-size: 50px;
     
@@ -47,7 +48,20 @@ h1{
     width: 50px;
     height: 50px;
 }
-
+.iniciar-sesión{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 500px;
+    margin-top: 100px;
+   margin-left: 500px;
+    border: 1px solid black;
+    padding: 50px;
+}
+.iniciar-sesión .formulario-resgistro{
+    width: 300px;
+}
 /*fin navegador*/
 
 /*inicio main*/
@@ -58,6 +72,71 @@ h1{
         margin-top: 40px;
     }
 /*fin main*/
+
+/*INICIO GALERIA*/
+.parr{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(209, 173, 94) ;
+    background-size: 100%;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+
+.grid-padree{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    padding: 50px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(6,400px);
+    gap: 10px;
+    grid-template-areas: "img0 img0 img0 img0 img0"
+                         "img1 img1 img7 img7 img7"
+                         "img3 img3 img3 img3 img3"
+                         "img5 img5 img5 img4 img4"
+                         "img6 img6 img6 img4 img4"
+                         "img8 img8 img8 img2 img2"
+
+}
+.grid-padree img{
+    width: 100%;
+   height:100%;
+    object-fit: cover;
+ 
+}
+.img0{
+    grid-area: img0;
+}
+
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+.img8{
+    grid-area: img8;
+}
+/*FIN GALERIA*/
 
 /*Inicio pie de pagina*/
 .pie-de-pagina-registro{
@@ -110,6 +189,7 @@ h1{
 }
 
 .cartel{
+    border: 1px solid black;
     text-align: center;
     display: grid;
     background-color: rgb(209, 173, 94);
@@ -196,37 +276,28 @@ h1{
 /*fin menu cmida*/
 
 /*inicio grid registro*/
-.grid-padre{
+.registro{
+    padding-left: 100px;
     height: 30px;
     margin: 20px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(5,1fr);
-    grid-template-areas: "a a b b"
-                         "a a b b"
-                         "a a b b"
-                         "a a c c"
-                         "a a c c";
+    display: flex;
+    flex-wrap: wrap;
 }
 .formulario-resgistro{
     width: 400px;
     height: 100%;
-    grid-area: a;
 }
 
 .nombre{
     margin-top: 40px;
     font-family: 'Borel', cursive;
     font-size: 150px;
-    grid-area: b;
-    margin-left: 20px;
+    padding-left: 60px;
 } 
 .nombre2{
-    
     font-family:'Borel', cursive;
     font-size: 150px;
-    grid-area: c;
-    margin-left: 20px;
+    padding-left: 150px;
 }
 /*fin grid registro*/
 /*inicio media 768*/
@@ -254,10 +325,20 @@ h1{
 .navegador h1 {
         display: none;
       }
-.imagen-grid{
+.nombre-cafe{
 display: none;
 }
-    
+ 
+.parr{
+    font-size: 30px;
+}
+.grid-padree{
+    display: flex;
+    flex-wrap: wrap;
+}
+.iniciar-sesión{
+    margin-left: 45px;
+}
 }
 /*fin media 768*/
 
@@ -268,6 +349,13 @@ display: none;
 }
 .redes i{
     font-size: 30px;
+}
+.iniciar-sesión{
+    margin-left: 0;
+    width: 100%;
+}
+.registro{
+    padding-left: 0;
 }
 }
 /*fin media 576*/

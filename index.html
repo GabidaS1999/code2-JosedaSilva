@@ -21,19 +21,44 @@
               <ul class="dropdown-menu">
                 <li><a href="./paginas/menu.html"><button class="dropdown-item" type="button">Menú</button></a></li>
                 <li><a href="./paginas/registro.html"><button class="dropdown-item" type="button">Registrarse</button></a></li>
+                <li><a href="./paginas/galeria.html"><button class="dropdown-item" type="button">Galería</button></a></li>
               </ul>
             </div>
             <ul>
               <li><a href="./paginas/menu.html">Menú</a></li>
               <li><a href="./paginas/registro.html">Registrarse</a></li>
+              <li><a href="./paginas/galeria.html">Galería</a></li>
             </ul>
         </nav>
         
     </header>
     <main>
+      <nav class="cartel">
+        <h2>HORARIO DE APERTURA</h2>
+        <p> Lun. a Dom. 10 a 20:30hs</p>
+        <p>MARTES CERRADOS</p>
+      </nav>
 
         <img class="imagen" src="./MULTIMEDIA/inicio/inicio-lindo2.jpg" alt="inicio">
-
+      <div class="iniciar-sesión">
+        <h2>Inicia sesión</h2>
+        <form class="formulario-resgistro">
+          <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+          </div>
+          <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Iniciar</button>
+       </form>
+      </div>
     </main>
     <footer>
      <section class="pie-de-pagina">
