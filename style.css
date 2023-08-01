@@ -365,7 +365,8 @@ display: none;
     margin-left: 45px;
 }
 .pie-de-pagina{
-    font-size: 15px;
+    font-size: 10px;
+    gap: 5px;
 }
 
 .redes{
