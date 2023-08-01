@@ -49,18 +49,18 @@ h1{
     height: 50px;
 }
 .iniciar-sesión{
-    justify-content: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 500px;
+    justify-content: center;
+    
     margin-top: 100px;
-   margin-left: 500px;
+    align-items: center;
+}
+.iniciar-sesión .formulario-resgistro-inicio{
+    width: 300px;
     border: 1px solid black;
     padding: 50px;
-}
-.iniciar-sesión .formulario-resgistro{
-    width: 300px;
 }
 /*fin navegador*/
 
@@ -155,20 +155,21 @@ h1{
     border-top: 1px solid black;
     margin-top: 100px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,2fr);
     gap: 2px;
     padding: 10px;
 }
 .info-nosotros{
-    gap: 20px;
+    text-decoration: none;
+    
+    display: flex;
+    flex-direction: column;
 }
-.info-nosotros ul{
-    list-style: none;
-}
-.info-nosotros ul li a{
+.info-nosotros a{
     text-decoration: none;
     color: black;
 }
+
 .redes i{
     padding-top: 20px;
     font-size: 50px;
@@ -300,6 +301,30 @@ h1{
     padding-left: 150px;
 }
 /*fin grid registro*/
+
+ /*Inicio media 1200*/
+@media(max-width:1200px){
+   .navegador h1{
+    font-size: 50px;
+    margin-right: 150px;
+   }
+   .navegador ul{
+    font-size: 30px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+   }
+   .nombre, .nombre2{
+    display: none;
+   }
+
+   .parr{
+    font-size: 40px;
+   }
+   
+}
+ /*Fin media 1200*/
+
 /*inicio media 768*/
 @media(max-width:768px){
 .navegador ul{
@@ -338,6 +363,14 @@ display: none;
 }
 .iniciar-sesión{
     margin-left: 45px;
+}
+.pie-de-pagina{
+    font-size: 15px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
 }
 }
 /*fin media 768*/
