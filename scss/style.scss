@@ -1,0 +1,384 @@
+*{
+    top: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    
+}
+h1{
+    margin-left: 100px;
+    color: black;
+    font-size: 50px;
+    
+}
+
+/*inicio navegador*/
+.navegador{
+    top:0;
+    align-items: center ;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%; 
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    h1{
+        padding-left: 180px;
+        @media(max-width:1200px){
+             font-size: 50px;
+             margin-right: 150px;
+        }
+        @media(max-width: 768px){
+                display: none;
+
+        }
+    }
+    ul{
+        top: 0;
+        list-style: none;
+        display: flex;
+        justify-content: end;
+            @media(max-width: 1200px ){
+            font-size: 30px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            }
+               @media(max-width:768px){
+                position: fixed;
+                width: 40%;
+                background-color: rgb(209, 173, 94);
+                height: 100vh;
+                justify-content: start;
+                top: -1500px;}
+        li a {
+     
+            font-size: 25px;
+            color: black;
+            text-decoration: none;
+            margin: 10px;
+            @media(max-width:768px){
+                color: white;
+                margin: 0;
+    }
+        }
+    }
+    .dropdown{
+        display: none;
+        @media(max-width:768px){
+                    font-size: 30px;
+                    display: block;
+                    order: -1;
+        }
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+   
+}
+/*fin navegador*/
+
+/*inicio main index*/
+    .imagen{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        margin-top: 40px;
+    }
+    .iniciar-sesión{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 100px;
+        align-items: center;
+        @media(max-width:768px){
+                margin-left: 45px;
+            }
+        @media(max-width: 576px){
+                margin-left: 0;
+                width: 100%;
+        }    
+    }
+    .formulario-resgistro-inicio{
+        width: 300px;
+        border: 1px solid black;
+        padding: 50px;
+    }
+/*fin main index*/
+
+/*INICIO GALERIA*/
+.parr{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(209, 173, 94) ;
+    background-size: 100%;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+    @media(max-width: 1200px){
+        font-size: 40px;
+    }
+    @media(max-width: 768px){
+            font-size: 30px;
+    }
+}
+
+.grid-padree{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    padding: 50px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(6,400px);
+    gap: 10px;
+    grid-template-areas: "img0 img0 img0 img0 img0"
+                         "img1 img1 img7 img7 img7"
+                         "img3 img3 img3 img3 img3"
+                         "img5 img5 img5 img4 img4"
+                         "img6 img6 img6 img4 img4"
+                         "img8 img8 img8 img2 img2";
+    img{
+      width: 100%;
+     height:100%;
+    object-fit: cover;
+    }
+    .img0{
+        grid-area: img0;
+    }
+    
+    .img1{
+        grid-area: img1;
+    }
+    .img2{
+        grid-area: img2;
+    }
+    .img3{
+        grid-area: img3;
+    }
+    .img4{
+        grid-area: img4;
+    }
+    .img5{
+        grid-area: img5;
+    }
+    .img6{
+        grid-area: img6;
+    }
+    .img7{
+        grid-area: img7;
+    }
+    .img8{
+        grid-area: img8;
+    }
+    @media(max-width: 768px){
+            display: flex;
+            flex-wrap: wrap;
+    }
+}
+
+/*FIN GALERIA*/
+
+/*Inicio pie de pagina*/
+.pie-de-pagina-registro{
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid black;
+    margin-top: 700px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2px;
+    padding: 10px;
+}
+.pie-de-pagina{
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid black;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 2px;
+    padding: 30px;
+    .info-nosotros{
+        text-decoration: none;
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .info-nosotros a{
+        text-decoration: none;
+        color: black;
+    }
+    .redes{
+        i{
+            padding-top: 20px;
+            font-size: 50px;
+            margin-left: 50px;
+            @media(max-width: 768px){
+                font-size: 30px;
+            }
+            @media(max-width: 576px){
+                    font-size: 10px;
+            }
+        }
+        @media(max-width: 768px){
+                display: flex;
+                flex-direction: column;
+        }
+    }
+
+    @media(max-width: 768px){
+            font-size: 10px;
+            gap: 5px;
+    }
+}
+
+/*Fin pie de pagina*/
+
+
+/*inicio cartel menu*/
+.texto{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+.texto2{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+
+.cartel{
+    border: 1px solid black;
+    text-align: center;
+    display: grid;
+    background-color: rgb(209, 173, 94);
+    color: white;
+}
+/*fin cartel menu*/
+
+
+/*inicio menú bebidas*/
+.menu-bebidas h2{
+    display: flex;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    align-items: center;
+}
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @media(max-width:576px){
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.imagen-menu{
+    margin-top:45px ;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    
+}
+.menu-tarjetas{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin: 20px 20px 20px 20px;
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 200px;
+    background-color: rgba(99, 63, 16, 0.89);
+    a{
+        margin-top: 10px;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.imagen-menu-caliente{
+    margin-top: 50px;
+    width: 150px;
+    height: 100px ;
+}
+.imagen-menu-helado{
+    margin-top: 40px;
+    width: 80px;
+    height: 100px;
+    
+}
+/*fin menú*/
+
+/*inico menu comida*/
+.menu-comida {
+    h2{
+    display: flex;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    align-items: center;}
+    .imagen-menu-comida{
+        margin-bottom:45px;
+        padding-top: 50px;
+        width: 100px;
+        height: 100px;
+    }
+    .imagen-menu-comida2{
+        margin-bottom:45px;
+        padding-top: 50px;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+}
+
+
+/*fin menu cmida*/
+
+/*inicio grid registro*/
+.registro{
+    padding-left: 100px;
+    height: 100%;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    .formulario-resgistro{
+        width: 400px;
+        height: 100%;
+        
+    }
+    .nombre{
+        margin-top: 40px;
+        font-family: 'Borel', cursive;
+        font-size: 150px;
+        padding-left: 60px;
+        @media(max-width:1200px){
+            display: none;
+       }
+    } 
+    .nombre2{
+        font-family:'Borel', cursive;
+        font-size: 150px;
+        padding-left: 150px;
+        @media(max-width:1200px){
+             display: none;
+            }
+    }
+    @media(max-width:576px){
+            padding-left: 0;
+        }
+}
+
+/*fin grid registro*/
