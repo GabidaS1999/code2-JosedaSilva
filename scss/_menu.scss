@@ -1,0 +1,102 @@
+
+
+
+/*inicio menú bebidas*/
+.menu-bebidas h2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    align-items: center;
+}
+.tarjetas{
+    padding-left: 100px;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    @media(max-width:992px){
+        grid-template-columns: repeat(3,1);
+        padding-left: 0;
+    }
+    @media(max-width:768px){
+        padding-left: 0;
+        grid-template-columns: repeat(3,1fr);
+    }
+    @media(max-width:576px){
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.imagen-menu{
+    margin-top:45px ;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    
+}
+.menu-tarjetas{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    
+    margin: 20px 20px 20px 20px;
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 200px;
+    background-color: rgba(99, 63, 16, 0.89);
+    a{
+        margin-top: 10px;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.imagen-menu-caliente{
+    margin-top: 50px;
+    width: 150px;
+    height: 100px ;
+}
+.imagen-menu-helado{
+    margin-top: 40px;
+    width: 80px;
+    height: 100px;
+    
+}
+/*fin menú*/
+
+/*inico menu comida*/
+.menu-comida {
+    
+    h2{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    align-items: center;}
+    .imagen-menu-comida{
+        margin-bottom:45px;
+        padding-top: 50px;
+        width: 100px;
+        height: 100px;
+    }
+    .imagen-menu-comida2{
+        margin-bottom:45px;
+        padding-top: 50px;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+}
+
+
+/*fin menu cmida*/

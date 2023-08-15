@@ -13,11 +13,88 @@ h1 {
   font-size: 50px;
 }
 
-/*inicio navegador*/
+.cartel {
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(209, 173, 94);
+  background-size: 100%;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
+}
+.cartel p {
+  font-size: 20px;
+}
+@media (max-width: 1200px) {
+  .cartel {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .cartel {
+    font-size: 30px;
+  }
+}
+
+.cartel-inicio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1200px) {
+  .cartel-inicio {
+    background-image: url(../MULTIMEDIA/inicio/inicio-lindo2.jpg);
+  }
+}
+.cartel-inicio .imagen1 {
+  object-fit: cover;
+  top: 68px;
+  height: inherit;
+  width: inherit;
+  padding: 0;
+}
+@media (max-width: 1200px) {
+  .cartel-inicio .imagen1 {
+    display: none;
+  }
+}
+.cartel-inicio .imagen2 {
+  object-fit: cover;
+  top: 68px;
+  height: inherit;
+  width: inherit;
+  padding: 0;
+}
+@media (max-width: 1200px) {
+  .cartel-inicio .imagen2 {
+    display: none;
+  }
+}
+.cartel-inicio .imagen3 {
+  object-fit: cover;
+  top: 68px;
+  height: inherit;
+  width: inherit;
+  padding: 0;
+}
+@media (max-width: 1200px) {
+  .cartel-inicio .imagen3 {
+    display: none;
+  }
+}
+
 .navegador {
   top: 0;
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   background-color: rgb(255, 255, 255);
   width: 100%;
   height: 100%;
@@ -30,7 +107,8 @@ h1 {
 @media (max-width: 1200px) {
   .navegador h1 {
     font-size: 50px;
-    margin-right: 150px;
+    margin: 0;
+    padding-left: 60px;
   }
 }
 @media (max-width: 768px) {
@@ -42,6 +120,8 @@ h1 {
   top: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: end;
 }
 @media (max-width: 1200px) {
@@ -49,6 +129,7 @@ h1 {
     font-size: 30px;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
   }
 }
@@ -89,8 +170,6 @@ h1 {
   height: 50px;
 }
 
-/*fin navegador*/
-/*inicio main index*/
 .imagen {
   width: 100%;
   height: 400px;
@@ -100,8 +179,8 @@ h1 {
 
 .iniciar-sesión {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   margin-top: 100px;
   align-items: center;
@@ -122,30 +201,6 @@ h1 {
   width: 300px;
   border: 1px solid black;
   padding: 50px;
-}
-
-/*fin main index*/
-/*INICIO GALERIA*/
-.parr {
-  width: 100%;
-  height: 100px;
-  background-color: rgb(209, 173, 94);
-  background-size: 100%;
-  color: white;
-  font-size: 50px;
-  text-align: center;
-  border-bottom: 1px solid black;
-  margin-bottom: 30px;
-}
-@media (max-width: 1200px) {
-  .parr {
-    font-size: 40px;
-  }
-}
-@media (max-width: 768px) {
-  .parr {
-    font-size: 30px;
-  }
 }
 
 .grid-padree {
@@ -197,19 +252,6 @@ h1 {
   }
 }
 
-/*FIN GALERIA*/
-/*Inicio pie de pagina*/
-.pie-de-pagina-registro {
-  bottom: 0;
-  width: 100%;
-  border-top: 1px solid black;
-  margin-top: 700px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
-  padding: 10px;
-}
-
 .pie-de-pagina {
   bottom: 0;
   width: 100%;
@@ -241,7 +283,7 @@ h1 {
 }
 @media (max-width: 576px) {
   .pie-de-pagina .redes i {
-    font-size: 10px;
+    font-size: 30px;
   }
 }
 @media (max-width: 768px) {
@@ -257,32 +299,11 @@ h1 {
   }
 }
 
-/*Fin pie de pagina*/
-/*inicio cartel menu*/
-.texto {
-  font-size: 40px;
-  font-family: "Times New Roman", Times, serif;
-  margin: 20px;
-}
-
-.texto2 {
-  font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
-  margin: 20px;
-}
-
-.cartel {
-  border: 1px solid black;
-  text-align: center;
-  display: grid;
-  background-color: rgb(209, 173, 94);
-  color: white;
-}
-
-/*fin cartel menu*/
 /*inicio menú bebidas*/
 .menu-bebidas h2 {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   padding-left: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -293,8 +314,22 @@ h1 {
 }
 
 .tarjetas {
+  padding-left: 100px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 992px) {
+  .tarjetas {
+    grid-template-columns: repeat(3, 1);
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .tarjetas {
+    padding-left: 0;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (max-width: 576px) {
   .tarjetas {
@@ -343,6 +378,7 @@ h1 {
 /*inico menu comida*/
 .menu-comida h2 {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -366,38 +402,80 @@ h1 {
 }
 
 /*fin menu cmida*/
-/*inicio grid registro*/
 .registro {
-  padding-left: 100px;
+  padding-top: 50px;
   height: 100%;
   margin: 20px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
 }
 .registro .formulario-resgistro {
   width: 400px;
   height: 100%;
 }
-.registro .nombre {
-  margin-top: 40px;
-  font-family: "Borel", cursive;
-  font-size: 150px;
-  padding-left: 60px;
+.registro .tarjeta-registro {
+  width: 400px;
+  height: 550px;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
 }
-@media (max-width: 1200px) {
-  .registro .nombre {
-    display: none;
-  }
+.registro .tarjeta-registro:hover .cuadrado {
+  left: -250px;
+  top: -150px;
+  opacity: 1;
 }
-.registro .nombre2 {
-  font-family: "Borel", cursive;
-  font-size: 150px;
-  padding-left: 150px;
+.registro .tarjeta-registro .cuadrado {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background-color: rgba(224, 140, 29, 0.89);
+  top: -900px;
+  left: -900px;
+  transition: 1s;
+  transform: rotate(45deg);
 }
-@media (max-width: 1200px) {
-  .registro .nombre2 {
-    display: none;
-  }
+.registro .tarjeta-registro img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.registro .tarjeta-registro .info {
+  width: inherit;
+  height: inherit;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  flex-direction: column;
+  text-shadow: 3px 2px 2px #CE5937;
+  opacity: 0;
+  top: -25px;
+  transition: 1s;
+}
+.registro .tarjeta-registro .info:hover {
+  top: 0;
+  opacity: 1;
+}
+.registro .tarjeta-registro .info h2 {
+  font-size: 20px;
+}
+.registro .tarjeta-registro .info p {
+  font-size: 18px;
+}
+.registro .tarjeta-registro .info button {
+  width: 200px;
+}
+.registro .tarjeta-registro .info button a {
+  color: white;
+  text-decoration: none;
 }
 @media (max-width: 576px) {
   .registro {
@@ -405,6 +483,60 @@ h1 {
   }
 }
 
-/*fin grid registro*/
+.boton {
+  width: 80px;
+  cursor: pointer;
+  background-color: black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  transition: 0, 5s;
+}
+.boton:hover {
+  background-color: rgb(65, 62, 62);
+}
+
+.button, .registro .formulario-resgistro button {
+  width: 150px;
+  cursor: pointer;
+  background-color: black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  transition: 0, 5s;
+}
+.button:hover, .registro .formulario-resgistro button:hover {
+  background-color: rgb(65, 62, 62);
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.black {
+  color: black;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.primario {
+  color: rgba(99, 63, 16, 0.89);
+}
+
+.secundario {
+  color: rgb(209, 173, 94);
+}
 
 /*# sourceMappingURL=style.css.map */

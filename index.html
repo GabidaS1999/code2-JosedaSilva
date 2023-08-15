@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!--ICONO -->
     <link rel="shortcut icon" href="./MULTIMEDIA/logo-cafe-nuevo.png" type="image/x-icon">
+
+    <!--INICIO META-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <meta name="description" content="Descubre un oasis de sabores en nuestra cafetería, donde el café excepcional y el ambiente acogedor se combinan para crear momentos inolvidables. ¡Visítanos y vive la pasión por el café!"> 
+
+    <!--TITULO-->
+    <title>Migas Café</title>
+
+    <!--LINK FONT AWSOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--LINK BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <!--LINK HOJA DE ESTILOS-->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -14,6 +26,7 @@
         <nav class="navegador">
             <a href="./index.html" ><img src="./MULTIMEDIA/logo-cafe-nuevo.png" class="logo" alt=""></a>
             <h1>Migas Café</h1>
+            <!--INICIO MENU DESPLEGABLE-->
             <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-bars"></i>
@@ -24,22 +37,26 @@
                 <li><a href="./paginas/galeria.html"><button class="dropdown-item" type="button">Galería</button></a></li>
               </ul>
             </div>
+            <!--FIN MENU DESPLEGABLE-->
+
+            <!--INICIO MENU NAVEGADOR-->
             <ul>
-              <li><a href="./paginas/menu.html">Menú</a></li>
-              <li><a href="./paginas/registro.html">Registrarse</a></li>
-              <li><a href="./paginas/galeria.html">Galería</a></li>
+              <li><a href="./paginas/menu.html" >Menú</a></li>
+              <li><a href="./paginas/registro.html" >Registrarse</a></li>
+              <li><a href="./paginas/galeria.html" >Galería</a></li>
             </ul>
+            <!--FIN MENU NAVEGADOR-->
         </nav>
         
     </header>
     <main>
-      <nav class="cartel">
-        <h2>HORARIO DE APERTURA</h2>
-        <p> Lun. a Dom. 10 a 20:30hs</p>
-        <p>MARTES CERRADOS</p>
+      <nav class="cartel-inicio">
+        <img src="./MULTIMEDIA/inicio/Post de Instagram para productos cafetería moderno café .jpg" class="imagen1" alt="">
+       <img src="./MULTIMEDIA/inicio/Historia de Instagram sobre cafetería.png" class="imagen2" alt="horarios">
+       <img src="./MULTIMEDIA/inicio/Post de Instagram para cafetería simple beige café.png" class="imagen3" alt="">
+
       </nav>
 
-        <img class="imagen" src="./MULTIMEDIA/inicio/inicio-lindo2.jpg" alt="inicio">
       <div class="iniciar-sesión">
         <h2>Iniciar sesión</h2>
         <form class="formulario-resgistro-inicio">
@@ -56,7 +73,7 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
           </div>
-          <button type="submit" class="btn btn-primary">Iniciar</button>
+          <button type="submit" class="boton btn btn-primary">Iniciar</button>
        </form>
       </div>
     </main>
@@ -84,6 +101,8 @@
         </div>
       </section>
     </footer> 
+    
+    <!--SCRIPT BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
