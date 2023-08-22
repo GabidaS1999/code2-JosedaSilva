@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <!--ICONO-->
-    <link rel="shortcut icon" href="../MULTIMEDIA/logo-cafe-nuevo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../MULTIMEDIA/inicio/logo-migas-cafe.png" type="image/x-icon">
 
     <!--INICIO META-->
     <meta charset="UTF-8">
@@ -24,75 +24,91 @@
 <body>
     <header>
         <nav class="navegador">
-            <a href="../index.html" ><img src="../MULTIMEDIA/logo-cafe-nuevo.png" class="logo" alt=""></a>
-            <h1>Menú</h1>
+            <a href="../index.html" ><img src="../MULTIMEDIA/inicio/logo-migas-cafe.png" class="logo" alt=""></a>
+            
             <!--INICIO MENU DESPLEGABLE-->
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-bars"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a href="../paginas/menu.html"><button class="dropdown-item" type="button">Menú</button></a></li>
-                  <li><a href="../paginas/registro.html"><button class="dropdown-item" type="button">Registrarse</button></a></li>
-                  <li><a href="../paginas/galeria.html"><button class="dropdown-item" type="button">Galería</button></a></li>
-                </ul>
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="../paginas/menu.html"><button class="dropdown-item" type="button">Menú</button></a></li>
+                <li><a href="../paginas/registro.html"><button class="dropdown-item" type="button">Registrarse</button></a></li>
+                <li><a href="../paginas/galeria.html"><button class="dropdown-item" type="button">Galería</button></a></li>
+              </ul>
             </div>
             <!--FIN MENU DESPLEGABLE-->
-
+    
             <!--INICIO MENU NAVEGADOR-->
-            <ul>
-                <li><a href="../paginas/menu.html">Menú</a></li>
-                <li><a href="../paginas/registro.html">Registrarse</a></li>
-                <li><a href="../paginas/galeria.html">Galería</a></li>
-            </ul>
+            <div>
+              <ul>
+                  <li><a href="../paginas/menu.html" class="underline-hover">Menú</a></li>
+                  <li><a href="../paginas/registro.html" class="underline-hover">Registrarse</a></li>
+                  <li><a href="../paginas/galeria.html" class="underline-hover">Galería</a></li>
+              </ul>
+            </div>
             <!--FIN MENU NAVEGADOR-->
         </nav>
     </header>
     <main>
-        <nav class="cartel">
-            <h2>¡CONOCELOS!</h2>
-            <p class="texto2">Conoce y disfruta de nuestros productos</p>
+        <nav class="portada">
+            <img src="../MULTIMEDIA/inicio/portada-menú.PNG" alt="">
         </nav>
 
-        <nav class="menu-bebidas">
+        <nav class="menu">
             <h2>Bebidas</h2>
             <section class="tarjetas">
-                    <div class="menu-tarjetas">
-                        <img class="imagen-menu-caliente"  src="../MULTIMEDIA/bebidas/bebida-caliente.png" alt="Cafe" >
-                        <a href="#">Cafés calientes</a>
-                    </div>
-                    <div class="menu-tarjetas">
-                        <img class="imagen-menu"  src="../MULTIMEDIA/bebidas/cafe-friooo-removebg-preview.png" alt="Cafe" >
-                        <a href="#">Cafés helados</a>
-                    </div>
-                    <div class="menu-tarjetas">
-                        <img class="imagen-menu-caliente"  src="../MULTIMEDIA/bebidas/Té-caliente.png" alt="Cafe" >
-                        <a href="#">Té Caliente</a>
-                    </div>
-                    <div class="menu-tarjetas">
-                        <img class="imagen-menu-helado"  src="../MULTIMEDIA/bebidas/té-helado.png" alt="Cafe" >
-                        <a href="#">Té helado</a>
-                    </div>
+                <div class="tarjetita ">  
+                    <h3>CAFÉ</h3>
+                    <p class=""><img class="imagen-c" src="../MULTIMEDIA/bebidas/café.png" alt="">Aromas Tradicionales</p>   
+                 </div>
+                 <div class="tarjetita">  
+                    <h3>CAPUCCINO</h3>
+                    <p><img src="../MULTIMEDIA/bebidas/capuccino.png" alt="">  Espresso, Leche y Espuma en perfecta armonía </p>   
+                 </div>
+                 <div class="tarjetita">  
+                    <h3>LATTE</h3>
+                    <p><img src="../MULTIMEDIA/bebidas/latte.png" alt=""> Café y leche perfectamente mezclados</p>   
+                 </div>
+                 <div class="tarjetita ">  
+                    <h3 class="machiatto">LATTE MACHIATTO </h3>
+                    <p class=""><img class="imagen-m" src="../MULTIMEDIA/bebidas/latte-machiatto.png" alt="">Leche con toque de café</p>   
+                 </div>
+                 <div class="tarjetita">  
+                    <h3>TÉ</h3>
+                    <p class="p-te"><img class="imagen-c" src="../MULTIMEDIA/bebidas/té.png" alt=""> Naturaleza en tu taza.
+                    Descubre nuestros sabores </p>   
+                 </div>
+            
             </section>
         </nav>
 
-        <nav class="menu-comida">
+        <nav class="menu">
             <h2>Comidas</h2>
             <section class="tarjetas">
-                <div class="menu-tarjetas">
-                    <img class="imagen-menu-comida2"  src="../MULTIMEDIA/comidas/poundcake.png" alt="Cafe" >
-                    <a href="#">Bakery</a>
-                </div>
-                <div class="menu-tarjetas">
-                    <img class="imagen-menu-comida"  src="../MULTIMEDIA/comidas/sandwiches.png" alt="Cafe" >
-                    <a href="#">Sándwichs</a>
-                </div>
-                <div class="menu-tarjetas">
-                    <img class="imagen-menu-comida"  src="../MULTIMEDIA/comidas/cookies.png" alt="Cafe" >
-                    <a href="#">Snacks</a>
-                </div>
-
+                <div class="tarjetita ">  
+                    <h3>SANDWICHES</h3>
+                    <p class=""><img class="imagen-c" src="../MULTIMEDIA/comidas/sandwich.png" alt="">Satisfacción en cada mordisco</p>   
+                 </div>
+                 <div class="tarjetita">  
+                    <h3>COOKIES</h3>
+                    <p><img src="../MULTIMEDIA/comidas/cookies.png" alt="">Amor en cada bocado</p>   
+                 </div>
+                 <div class="tarjetita">  
+                    <h3>CUPCAKES</h3>
+                    <p><img src="../MULTIMEDIA/comidas/cupcake.png" alt=""> Pequeñas delicias dulces.</p>   
+                 </div>
+                 <div class="tarjetita ">  
+                    <h3 >POSTRES </h3>
+                    <p><img  src="../MULTIMEDIA/comidas/postre.png" alt="">Postres irresistibles.</p>   
+                 </div>
+                 <div class="tarjetita">  
+                    <h3>DONAS</h3>
+                    <p class="p-te"><img class="imagen-c" src="../MULTIMEDIA/comidas/donas.png" alt=""> Dulce Tentación en Círculos.</p>   
+                 </div>
+            
             </section>
+         
 
 
         </nav>

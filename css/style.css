@@ -13,30 +13,25 @@ h1 {
   font-size: 50px;
 }
 
-.cartel {
-  padding: 10px;
+.portada {
   width: 100%;
-  height: 100px;
-  background-color: rgb(209, 173, 94);
-  background-size: 100%;
-  color: white;
-  font-size: 50px;
-  text-align: center;
-  border-bottom: 1px solid black;
-  margin-bottom: 30px;
-}
-.cartel p {
-  font-size: 20px;
-}
-@media (max-width: 1200px) {
-  .cartel {
-    font-size: 40px;
-  }
+  height: 400px;
+  margin-bottom: 50px;
 }
 @media (max-width: 768px) {
-  .cartel {
-    font-size: 30px;
+  .portada {
+    height: 200px;
   }
+}
+@media (max-width: 576px) {
+  .portada {
+    height: 150px;
+  }
+}
+.portada img {
+  object-fit: cover;
+  height: inherit;
+  width: inherit;
 }
 
 .cartel-inicio {
@@ -46,11 +41,6 @@ h1 {
   height: 500px;
   display: flex;
   justify-content: center;
-}
-@media (max-width: 1200px) {
-  .cartel-inicio {
-    background-image: url(../MULTIMEDIA/inicio/inicio-lindo2.jpg);
-  }
 }
 .cartel-inicio .imagen1 {
   object-fit: cover;
@@ -88,18 +78,39 @@ h1 {
     display: none;
   }
 }
+.cartel-inicio .imagen4 {
+  display: none;
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  .cartel-inicio .imagen4 {
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .cartel-inicio .imagen4 {
+    display: none;
+  }
+}
+.cartel-inicio .imagen5 {
+  display: none;
+  width: inherit;
+  height: 300px;
+}
+@media (max-width: 576px) {
+  .cartel-inicio .imagen5 {
+    display: block;
+  }
+}
 
 .navegador {
-  top: 0;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  background-color: rgb(255, 255, 255);
   width: 100%;
   height: 100%;
+  display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  flex-wrap: wrap;
+  z-index: 500;
+  position: relative;
 }
 .navegador h1 {
   padding-left: 180px;
@@ -113,68 +124,104 @@ h1 {
 }
 @media (max-width: 768px) {
   .navegador h1 {
-    display: none;
+    order: -1;
+  }
+}
+@media (max-width: 576px) {
+  .navegador h1 {
+    font-size: 30px;
   }
 }
 .navegador ul {
-  top: 0;
-  list-style: none;
+  text-decoration: none;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   justify-content: end;
-}
-@media (max-width: 1200px) {
-  .navegador ul {
-    font-size: 30px;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
+  align-items: center;
+  padding: 10px;
+  list-style: none;
 }
 @media (max-width: 768px) {
   .navegador ul {
-    position: fixed;
-    width: 40%;
-    background-color: rgb(209, 173, 94);
-    height: 100vh;
-    justify-content: start;
-    top: -1500px;
+    display: none;
   }
 }
 .navegador ul li a {
-  font-size: 25px;
+  font-size: 30px;
+  padding: 10px;
+  display: block;
   color: black;
-  text-decoration: none;
-  margin: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .navegador ul li a {
-    color: white;
-    margin: 0;
+    color: black;
+    font-size: 20px;
   }
 }
 .navegador .dropdown {
   display: none;
+  padding-top: 30px;
+}
+.navegador .dropdown ul li a {
+  text-decoration: none;
+}
+.navegador .dropdown .dropdown-toggle {
+  font-size: 10px;
+}
+.navegador .dropdown .dropdown-menu {
+  background-color: rgb(209, 173, 94);
+}
+.navegador .dropdown .dropdown-item {
+  color: white;
+}
+.navegador .dropdown .btn {
+  background-color: rgb(209, 173, 94);
 }
 @media (max-width: 768px) {
   .navegador .dropdown {
     font-size: 30px;
     display: block;
-    order: -1;
+    order: -2;
   }
 }
 .navegador .logo {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .navegador .logo {
+    margin-right: 30px;
+  }
+}
+
+.underline-hover {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.underline-hover::after {
+  content: "";
+  height: 4px;
+  width: 0;
+  margin: auto;
+  background-color: rgb(209, 173, 94);
+  display: block;
+  transition: all 350ms;
+}
+@media (max-width: 768px) {
+  .underline-hover::after {
+    background-color: rgb(209, 173, 94);
+  }
+}
+
+.underline-hover:hover::after {
+  width: 100%;
 }
 
 .imagen {
   width: 100%;
   height: 400px;
   object-fit: cover;
-  margin-top: 40px;
 }
 
 .iniciar-sesión {
@@ -182,7 +229,6 @@ h1 {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  margin-top: 100px;
   align-items: center;
 }
 @media (max-width: 768px) {
@@ -299,8 +345,12 @@ h1 {
   }
 }
 
-/*inicio menú bebidas*/
-.menu-bebidas h2 {
+.menu {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.menu h2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -312,96 +362,71 @@ h1 {
   border-top: 1px solid black;
   align-items: center;
 }
-
-.tarjetas {
-  padding-left: 100px;
-  display: grid;
+.menu .tarjetas {
+  width: 100%;
+  height: inherit;
+  padding-left: 85px;
+  display: flex;
   flex-wrap: wrap;
-  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.menu .tarjetas .tarjetita {
+  height: 150px;
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 35px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: rgba(190, 132, 57, 0.9254901961);
+  transition: 0.5s;
+  box-shadow: 10px 5px 5px black;
+  margin-bottom: 30px;
+}
+.menu .tarjetas .tarjetita h3 {
+  text-align: center;
+  width: 100%;
+  font-style: italic;
+}
+.menu .tarjetas .tarjetita img {
+  width: 120px;
+  height: 100px;
+}
+.menu .tarjetas .tarjetita p {
+  display: flex;
+  font-size: 18px;
+}
+.menu .tarjetas .tarjetita .machiatto {
+  font-size: 25px;
+}
+.menu .tarjetas .tarjetita .imagen-c {
+  height: 90px;
+}
+.menu .tarjetas .tarjetita .p-te {
+  font-size: 15px;
 }
 @media (max-width: 992px) {
-  .tarjetas {
-    grid-template-columns: repeat(3, 1);
+  .menu .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 0;
   }
 }
 @media (max-width: 768px) {
-  .tarjetas {
+  .menu .tarjetas {
     padding-left: 0;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 576px) {
-  .tarjetas {
-    grid-template-columns: repeat(2, 1fr);
+  .menu .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
-.imagen-menu {
-  margin-top: 45px;
-  height: 100px;
-  width: 100px;
-  object-fit: cover;
-}
-
-.menu-tarjetas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px 20px 20px 20px;
-  border: 1px solid black;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 200px;
-  background-color: rgba(99, 63, 16, 0.89);
-}
-.menu-tarjetas a {
-  margin-top: 10px;
-  text-decoration: none;
-  color: black;
-}
-
-.imagen-menu-caliente {
-  margin-top: 50px;
-  width: 150px;
-  height: 100px;
-}
-
-.imagen-menu-helado {
-  margin-top: 40px;
-  width: 80px;
-  height: 100px;
-}
-
-/*fin menú*/
-/*inico menu comida*/
-.menu-comida h2 {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-top: 20px;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  align-items: center;
-}
-.menu-comida .imagen-menu-comida {
-  margin-bottom: 45px;
-  padding-top: 50px;
-  width: 100px;
-  height: 100px;
-}
-.menu-comida .imagen-menu-comida2 {
-  margin-bottom: 45px;
-  padding-top: 50px;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
-
-/*fin menu cmida*/
 .registro {
   padding-top: 50px;
   height: 100%;
@@ -509,6 +534,22 @@ h1 {
 }
 .button:hover, .registro .formulario-resgistro button:hover {
   background-color: rgb(65, 62, 62);
+}
+
+.wpp {
+  position: fixed;
+  width: 55px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: green;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wpp i {
+  font-size: 60px;
 }
 
 .blue {

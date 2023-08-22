@@ -1,0 +1,16 @@
+.wpp{
+    position: fixed;
+    width: 55px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: green;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i{
+        font-size: 60px;
+        
+    }
+}

@@ -1,24 +1,19 @@
-.cartel{
-    padding: 10px;
+
+.portada{
     width: 100%;
-    height: 100px;
-    background-color: rgb(209, 173, 94) ;
-    background-size: 100%;
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    border-bottom: 1px solid black;
-    margin-bottom: 30px;
-    p{
-        font-size: 20px;
+    height: 400px;
+    @media(max-width:768px){
+        height: 200px;
     }
-    
-    @media(max-width: 1200px){
-        font-size: 40px;
+    @media(max-width:576px)  {
+        height: 150px;
     }
-    @media(max-width: 768px){
-            font-size: 30px;
+    img{
+        object-fit: cover;
+        height: inherit;
+        width: inherit;
     }
+    margin-bottom: 50px;
 }
 .cartel-inicio{
     display: grid;
@@ -27,9 +22,7 @@
     height: 500px;
     display: flex;
     justify-content: center;
-    @media(max-width:1200px){
-        background-image: url(../MULTIMEDIA/inicio/inicio-lindo2.jpg);
-    }
+   
    
     .imagen1{
         object-fit: cover;
@@ -61,6 +54,24 @@
         @media(max-width: 1200px){
             display: none;
         }
+       }
+       .imagen4{
+        display: none;
+        width: 100%;
+        @media(max-width: 1200px){
+            display: block;
+        }
+        @media(max-width:576px){
+            display: none;
+        }
+       }
+       .imagen5{
         
+        display: none;
+        width: inherit;
+        height: 300px;
+        @media(max-width: 576px){
+            display: block;
+        }
        }
 }

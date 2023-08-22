@@ -2,14 +2,14 @@
     width: 100%;
     height: 400px;
     object-fit: cover;
-    margin-top: 40px;
+  
 }
 .iniciar-sesión{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    margin-top: 100px;
+   
     align-items: center;
     @media(max-width:768px){
             margin-left: 45px;
