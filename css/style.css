@@ -389,6 +389,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     width: 150px;
+    margin-left: 30px;
   }
 }
 .menu .tarjetas .tarjetita h3 {
