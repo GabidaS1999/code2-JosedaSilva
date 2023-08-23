@@ -537,18 +537,21 @@ h1 {
 }
 
 .wpp {
-  position: fixed;
-  width: 55px;
-  height: 54px;
+  width: 75px;
+  height: 75px;
+  background-color: rgb(37, 211, 102);
   border-radius: 50%;
-  background-color: green;
-  z-index: 2;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 500px;
+  right: 30px;
+  box-shadow: 5px 5px 5px black;
 }
 .wpp i {
+  color: white;
   font-size: 60px;
 }
 
