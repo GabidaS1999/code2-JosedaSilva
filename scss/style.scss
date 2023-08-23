@@ -10,7 +10,7 @@
 @import "mixin";
 @import "boton";
 @import "extend";
-@import "whatsapp";
+
 
 @each  $color in $colores{
     .#{$color}{
