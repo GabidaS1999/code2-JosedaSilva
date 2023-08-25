@@ -35,7 +35,6 @@
             top: -900px;
             left: -900px;
             transition: 1s;
-            
             transform: rotate(45deg);
         }
         img{
@@ -57,7 +56,6 @@
             opacity: 0;
             top: -25px;
             transition: 1s;
-          
             &:hover{
                 top: 0;
                 opacity: 1;
