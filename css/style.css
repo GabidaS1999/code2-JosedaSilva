@@ -357,6 +357,14 @@ h1 {
     font-size: 20px;
   }
 }
+.menu .tarjetas .tarjetita .p-machi {
+  font-size: 17px;
+}
+@media (max-width: 576px) {
+  .menu .tarjetas .tarjetita .p-machi {
+    font-size: 11px;
+  }
+}
 .menu .tarjetas .tarjetita .imagen-c {
   height: 90px;
 }
@@ -370,7 +378,7 @@ h1 {
   height: 90px;
 }
 .menu .tarjetas .tarjetita .p-te {
-  font-size: 18px;
+  font-size: 15px;
 }
 @media (max-width: 992px) {
   .menu .tarjetas {

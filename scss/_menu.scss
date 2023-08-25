@@ -82,6 +82,12 @@
                     font-size: 20px;
                 }
             }
+            .p-machi{
+                font-size: 17px;
+                @media(max-width: 576px){
+                    font-size: 11px;
+                }
+            }
 
             .imagen-c {
                 height: 90px;
@@ -96,7 +102,7 @@
             }
 
             .p-te {
-                font-size: 18px;
+                font-size: 15px;
             }
 
 
