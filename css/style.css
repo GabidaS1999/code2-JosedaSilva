@@ -440,7 +440,7 @@ h1 {
 }
 @media (max-width: 576px) {
   .menu .tarjetas-comida .tarjetita-comida img {
-    width: 70px;
+    width: 65px;
     height: 90px;
   }
 }
