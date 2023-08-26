@@ -1,108 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <!--ICONO -->
-    <link rel="shortcut icon" href="./MULTIMEDIA/inicio/logo-migas-cafe.png" type="image/x-icon">
+  <!--ICONO -->
+  <link rel="shortcut icon" href="./MULTIMEDIA/inicio/logo-migas-cafe.png" type="image/x-icon">
 
-    <!--INICIO META-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubre un oasis de sabores en nuestra cafetería, donde el café excepcional y el ambiente acogedor se combinan para crear momentos inolvidables. ¡Visítanos y vive la pasión por el café!"> 
+  <!--INICIO META-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Descubre un oasis de sabores en nuestra cafetería, donde el café excepcional y el ambiente acogedor se combinan para crear momentos inolvidables. ¡Visítanos y vive la pasión por el café!">
 
-    <!--TITULO-->
-    <title>Migas Café</title>
+  <!--TITULO-->
+  <title>Migas Café</title>
 
-    <!--LINK BOOTSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!--LINK BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  
+  <!--LINK GOOGLEFONTS-->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Borel&family=Dancing+Script&family=MuseoModerno:ital,wght@1,100&family=Poppins:wght@200&family=Prompt:ital,wght@1,200&display=swap');
+  </style>
 
-     <!--LINK FONT AWSOME-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!--LINK HOJA DE ESTILOS-->
-    <link rel="stylesheet" href="./css/style.css">
+  <!--LINK FONT AWSOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--LINK HOJA DE ESTILOS-->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header>
-       <nav class="navegador">
-            <a href="./index.html" ><img src="./MULTIMEDIA/inicio/logo-migas-cafe.png" class="logo" alt=""></a>
-            
-            <!--INICIO MENU DESPLEGABLE-->
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa-solid fa-bars"></i>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a href="./paginas/menu.html"><button class="dropdown-item" type="button">Menú</button></a></li>
-                <li><a href="./paginas/registro.html"><button class="dropdown-item" type="button">Registrarse</button></a></li>
-                <li><a href="./paginas/galeria.html"><button class="dropdown-item" type="button">Galería</button></a></li>
-              </ul>
-            </div>
-            <!--FIN MENU DESPLEGABLE-->
+  <header>
+    <nav class="navegador">
+      <a href="./index.html"><img src="./MULTIMEDIA/inicio/logo-migas-cafe.png" class="logo" alt=""></a>
 
-            <!--INICIO MENU NAVEGADOR-->
-            <div>
-              <ul>
-                  <li><a href="./paginas/menu.html" class="underline-hover">Menú</a></li>
-                  <li><a href="./paginas/registro.html" class="underline-hover">Registrarse</a></li>
-                  <li><a href="./paginas/galeria.html" class="underline-hover">Galería</a></li>
-              </ul>
-            </div>
-            <!--FIN MENU NAVEGADOR-->
-        </nav>
-        
-    </header>
-    <main>
-      <nav class="portada">
-      <img src="./MULTIMEDIA/inicio/portada-inicio.png" alt="">
-      </nav>
-
-      <div class="iniciar-sesión">
-        <h2>Iniciar sesión</h2>
-        <form class="formulario-resgistro-inicio">
-          <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Correo</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
-          </div>
-          <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
-          </div>
-          <button type="submit" class="boton btn btn-primary">Iniciar</button>
-       </form>
+      <!--INICIO MENU DESPLEGABLE-->
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="./paginas/menu.html"><button class="dropdown-item" type="button">Menú</button></a></li>
+          <li><a href="./paginas/registro.html"><button class="dropdown-item" type="button">Registrarse</button></a>
+          </li>
+          <li><a href="./paginas/galeria.html"><button class="dropdown-item" type="button">Galería</button></a></li>
+        </ul>
       </div>
-    </main>
-    <footer>
-     <section class="pie-de-pagina">
-        <div class="info-nosotros">
-          <h2>Sobre nosotros</h2>
-            <a href="./paginas/nosotros.html">Nosotros</a>
-            <a href="#">Nuestra misión</a>
-            <a href="#">Nuestro café</a>
-          
+      <!--FIN MENU DESPLEGABLE-->
+      <h1>MIGAS CAFÉ</h1>
+      <!--INICIO MENU NAVEGADOR-->
+      <div>
+        <ul>
+          <li><a href="./paginas/menu.html" class="underline-hover">Menú</a></li>
+          <li><a href="./paginas/registro.html" class="underline-hover">Registrarse</a></li>
+          <li><a href="./paginas/galeria.html" class="underline-hover">Galería</a></li>
+        </ul>
+      </div>
+      <!--FIN MENU NAVEGADOR-->
+      
+    </nav>
+
+  </header>
+  <main>
+    <nav class="portada">
+      <img src="./MULTIMEDIA/inicio/portada-inicio.png" alt="">
+    </nav>
+
+    <div class="iniciar-sesión">
+      <h2>Iniciar sesión</h2>
+      <form class="formulario-resgistro-inicio">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
         </div>
-
-        <div class="info-contacto">
-          <h2>Contacto</h2>
-          <p>Telefono: +59893654789</p>
-          <p>Correo: Migascafe@hotmail.com</p>
-          <p>Direccion: Av. 18 de Julio 1891</p>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
-
-        <div class="redes">
-          <h2>Redes</h2>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-square-instagram"></i>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
         </div>
-      </section>
-    </footer> 
+        <button type="submit" class="boton btn btn-primary">Iniciar</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <section class="pie-de-pagina">
+      <div class="info-nosotros">
+        <h2>Sobre nosotros</h2>
+        <a href="./paginas/nosotros.html">Nosotros</a>
+        <a href="#">Nuestra misión</a>
+        <a href="#">Nuestro café</a>
+
+      </div>
+
+      <div class="info-contacto">
+        <h2>Contacto</h2>
+        <p>Telefono: +59893654789</p>
+        <p>Correo: Migascafe@hotmail.com</p>
+        <p>Direccion: Av. 18 de Julio 1891</p>
+      </div>
+
+      <div class="redes">
+        <h2>Redes</h2>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+      </div>
+    </section>
+  </footer>
 
 
-    <!--SCRIPT BOOTSTRAP-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <!--SCRIPT BOOTSTRAP-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

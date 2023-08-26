@@ -39,9 +39,16 @@ h1 {
   flex-wrap: wrap;
   z-index: 500;
   position: relative;
+  text-align: center;
+  align-items: center;
+}
+.navegador a {
+  order: -2;
 }
 .navegador h1 {
-  padding-left: 180px;
+  font-family: "Borel", cursive;
+  font-family: "Dancing Script", cursive;
+  order: -1;
 }
 @media (max-width: 1200px) {
   .navegador h1 {
@@ -53,11 +60,12 @@ h1 {
 @media (max-width: 768px) {
   .navegador h1 {
     order: -1;
+    display: none;
   }
 }
 @media (max-width: 576px) {
   .navegador h1 {
-    font-size: 30px;
+    font-size: 14px;
   }
 }
 .navegador ul {
@@ -73,11 +81,20 @@ h1 {
     display: none;
   }
 }
+.navegador ul li {
+  order: 3;
+}
 .navegador ul li a {
+  order: 2;
   font-size: 30px;
   padding: 10px;
   display: block;
   color: black;
+}
+@media (max-width: 1200px) {
+  .navegador ul li a {
+    font-size: 20px;
+  }
 }
 @media (max-width: 500px) {
   .navegador ul li a {
@@ -87,6 +104,7 @@ h1 {
 }
 .navegador .dropdown {
   display: none;
+  order: -4;
   padding-top: 30px;
 }
 .navegador .dropdown ul li a {
@@ -108,7 +126,7 @@ h1 {
   .navegador .dropdown {
     font-size: 30px;
     display: block;
-    order: -2;
+    order: -6;
   }
 }
 .navegador .logo {
@@ -119,6 +137,7 @@ h1 {
 @media (max-width: 768px) {
   .navegador .logo {
     margin-right: 30px;
+    order: -1;
   }
 }
 
@@ -236,6 +255,11 @@ h1 {
   gap: 2px;
   padding: 30px;
 }
+@media (max-width: 768px) {
+  .pie-de-pagina h2 {
+    font-size: 18px;
+  }
+}
 .pie-de-pagina .info-nosotros {
   text-decoration: none;
   display: flex;
@@ -248,7 +272,7 @@ h1 {
 .pie-de-pagina .redes i {
   padding-top: 20px;
   font-size: 50px;
-  margin-left: 50px;
+  padding-left: 30px;
 }
 @media (max-width: 768px) {
   .pie-de-pagina .redes i {
@@ -257,7 +281,7 @@ h1 {
 }
 @media (max-width: 576px) {
   .pie-de-pagina .redes i {
-    font-size: 30px;
+    font-size: 18px;
   }
 }
 @media (max-width: 768px) {
@@ -346,7 +370,7 @@ h1 {
 }
 @media (max-width: 576px) {
   .menu .tarjetas .tarjetita p {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 .menu .tarjetas .tarjetita .machiatto {
@@ -355,14 +379,6 @@ h1 {
 @media (max-width: 576px) {
   .menu .tarjetas .tarjetita .machiatto {
     font-size: 20px;
-  }
-}
-.menu .tarjetas .tarjetita .p-machi {
-  font-size: 17px;
-}
-@media (max-width: 576px) {
-  .menu .tarjetas .tarjetita .p-machi {
-    font-size: 11px;
   }
 }
 .menu .tarjetas .tarjetita .imagen-c {
@@ -377,8 +393,16 @@ h1 {
 .menu .tarjetas .tarjetita .imagen-t {
   height: 90px;
 }
+.menu .tarjetas .tarjetita .p-machi {
+  font-size: 17px;
+}
+@media (max-width: 576px) {
+  .menu .tarjetas .tarjetita .p-machi {
+    font-size: 11px;
+  }
+}
 .menu .tarjetas .tarjetita .p-te {
-  font-size: 15px;
+  font-size: 14px;
 }
 @media (max-width: 992px) {
   .menu .tarjetas {

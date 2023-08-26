@@ -8,25 +8,31 @@
     grid-template-columns: repeat(3,2fr);
     gap: 2px;
     padding: 30px;
+    @media(max-width:768px){
+        h2{
+            font-size: 18px;
+        }
+    }
     .info-nosotros{
         text-decoration: none;
         display: flex;
         flex-direction: column;
-    }
-    .info-nosotros a{
-        text-decoration: none;
-        color: black;
+        
+        a{
+            text-decoration: none;
+            color: black;
+        }
     }
     .redes{
         i{
             padding-top: 20px;
             font-size: 50px;
-            margin-left: 50px;
+            padding-left: 30px;
             @media(max-width: 768px){
                 font-size: 30px;
             }
             @media(max-width: 576px){
-                    font-size: 30px;
+                    font-size: 18px;
             }
         }
         @media(max-width: 768px){
