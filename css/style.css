@@ -66,6 +66,7 @@ h1 {
 @media (max-width: 576px) {
   .navegador h1 {
     font-size: 14px;
+    display: none;
   }
 }
 .navegador ul {
