@@ -28,8 +28,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
   <!--LINK HOJA DE ESTILOS-->
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body>
@@ -44,8 +48,6 @@
         </button>
         <ul class="dropdown-menu">
           <li><a href="../paginas/menu.html"><button class="dropdown-item" type="button">Menú</button></a></li>
-          <li><a href="../paginas/registro.html"><button class="dropdown-item" type="button">Registrarse</button></a>
-          </li>
           <li><a href="../paginas/galeria.html"><button class="dropdown-item" type="button">Galería</button></a></li>
         </ul>
       </div>
@@ -56,7 +58,6 @@
       <div>
         <ul>
           <li><a href="../paginas/menu.html" class="underline-hover">Menú</a></li>
-          <li><a href="../paginas/registro.html" class="underline-hover">Registrarse</a></li>
           <li><a href="../paginas/galeria.html" class="underline-hover">Galería</a></li>
         </ul>
       </div>
@@ -69,67 +70,27 @@
       <img src="../MULTIMEDIA/inicio/portada-menú.jpg" alt="">
     </div>
 
+   
+
+
     <nav class="menu">
-      <h2>Bebidas</h2>
-      <section class="tarjetas">
-        <div class="tarjetita ">
-          <h3>CAFÉ</h3>
-          <p class=""><img class="imagen-c" src="../MULTIMEDIA/bebidas/café.png" alt="">Descubre la magia en cada taza
-            de nuestro café.</p>
-        </div>
-        <div class="tarjetita">
-          <h3>CAPUCCINO</h3>
-          <p><img src="../MULTIMEDIA/bebidas/capuccino.png" alt=""> Espresso, leche y espuma en perfecta armonía </p>
-        </div>
-        <div class="tarjetita">
-          <h3>LATTE</h3>
-          <p><img src="../MULTIMEDIA/bebidas/latte.png" alt=""> Café y leche perfectamente mezclados</p>
-        </div>
-        <div class="tarjetita ">
-          <h3 class="machiatto"> MACHIATTO </h3>
-          <p class="p-machi"><img class="imagen-m" src="../MULTIMEDIA/bebidas/latte-machiatto.png" alt="">Espresso
-            perfecto coronado con un ligero velo de crema.</p>
-        </div>
-        <div class="tarjetita">
-          <h3>TÉ</h3>
-          <p class="p-te"><img class="imagen-t" src="../MULTIMEDIA/bebidas/té.png" alt=""> Té aromático, infusiones
-            únicas.</p>
-        </div>
+
+         
+    <!--ICONO TIENDA-->
+    <div class="logo-tienda">
+      <a href="./carrito.html"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+      </svg></a>
+      
+    </div>
+
+      <h2>Productos</h2>
+      <section class="tarjetas" id="tarjetas"  >
+        <!--JavaScript-->
 
       </section>
     </nav>
 
-    <nav class="menu">
-      <h2>Comidas</h2>
-      <section class="tarjetas-comida">
-        <div class="tarjetita-comida ">
-          <h3>SANDWICHES</h3>
-          <p class=""><img class="imagen-c" src="../MULTIMEDIA/comidas/sandwich.png" alt="">Satisfacción en cada
-            mordisco</p>
-        </div>
-        <div class="tarjetita-comida">
-          <h3>COOKIES</h3>
-          <p><img src="../MULTIMEDIA/comidas/cookies.png" alt="">Amor en cada bocado</p>
-        </div>
-        <div class="tarjetita-comida">
-          <h3>CUPCAKES</h3>
-          <p><img src="../MULTIMEDIA/comidas/cupcake.png" alt=""> Pequeñas delicias dulces.</p>
-        </div>
-        <div class="tarjetita-comida ">
-          <h3>POSTRES </h3>
-          <p><img src="../MULTIMEDIA/comidas/postre.png" alt="">Postres frescos, placer en cada porción.</p>
-        </div>
-        <div class="tarjetita-comida">
-          <h3>DONAS</h3>
-          <p class="p-te"><img class="imagen-d" src="../MULTIMEDIA/comidas/donas.png" alt=""> Dulce tentación en
-            círculos.</p>
-        </div>
-
-      </section>
-
-
-
-    </nav>
 
 
   </main>
@@ -159,10 +120,14 @@
   </footer>
 
 
+
+  <script src="../JS/menu.js"></script>
+ 
   <!--SCRIPT BOOTSTRAP-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>

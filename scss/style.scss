@@ -5,12 +5,11 @@
 @import "galeria";
 @import "pie-de-pagina";
 @import "menu";
-@import "grid-registro";
 @import "variables";
 @import "mixin";
 @import "boton";
 @import "extend";
-
+@import "carrito";
 
 @each  $color in $colores{
     .#{$color}{

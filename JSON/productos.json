@@ -1,0 +1,74 @@
+[
+    {
+        "id": "café",
+        "nombre": "Café negro",
+        "precio": 85,
+        "imagen": "/MULTIMEDIA/bebidas/café.png",
+        "categoría": "Bebidas"
+    },
+    {
+        "id": "té",
+        "nombre": "Té infusion   ",
+        "precio": 90,
+        "imagen": "/MULTIMEDIA/bebidas/té.png",
+        "categoría": "Bebidas"
+    },
+    {
+        "id": "capuccino",
+        "nombre": "Capuccino",
+        "precio":  25,
+        "imagen": "/MULTIMEDIA/bebidas/capuccino.png",
+        "categoría": "Bebidas"
+    },
+    {
+        "id": "latte-m",
+        "nombre": "Latte Mocca",
+        "precio":  50,
+        "imagen": "/MULTIMEDIA/bebidas/latte-machiatto.png",
+        "categoría": "Bebidas"
+    },
+    {
+        "id": "latte",
+        "nombre": "Latte",
+        "precio":  30,
+        "imagen": "/MULTIMEDIA/bebidas/latte.png",
+        "categoría": "Bebidas"
+    },
+    {
+        "id": "cookie",
+        "nombre": "Cookies",
+        "precio":  30,
+        "imagen": "/MULTIMEDIA/comidas/cookies.png",
+        "categoría": "Comida"
+    },
+
+    {
+        "id": "cupcake",
+        "nombre": "Cupcake",
+        "precio":  50,
+        "imagen": "/MULTIMEDIA/comidas/cupcake.png",
+        "categoría": "comida"
+    },
+
+    {
+        "id": "donas",
+        "nombre": "Donas",
+        "precio":  20,
+        "imagen": "/MULTIMEDIA/comidas/donas.png",
+        "categoría": "Comida"
+    },
+    {
+        "id": "Postre",
+        "nombre": "Postre",
+        "precio":  30,
+        "imagen": "/MULTIMEDIA/comidas/postre.png",
+        "categoría": "comida"
+    },
+    {
+        "id": "sanwich",
+        "nombre": "Sandwich",
+        "precio":  30,
+        "imagen": "/MULTIMEDIA/comidas/sandwich.png",
+        "categoría": "Comida"
+    }
+]

@@ -303,6 +303,21 @@ h1 {
   height: 100%;
   align-items: center;
 }
+.menu .logo-tienda {
+  position: fixed;
+  right: 0;
+  margin-top: 100px;
+  border: 1px solid rgba(190, 132, 57, 0.9254901961);
+  background-color: white;
+  width: 66px;
+  height: 66px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50px;
+}
+.menu .logo-tienda a {
+  color: rgba(190, 132, 57, 0.9254901961);
+}
 .menu h2 {
   display: flex;
   flex-wrap: wrap;
@@ -321,7 +336,7 @@ h1 {
   padding-left: 85px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 50px;
 }
 .menu .tarjetas .tarjetita {
   height: 150px;
@@ -367,7 +382,7 @@ h1 {
 }
 .menu .tarjetas .tarjetita p {
   display: flex;
-  font-size: 15px;
+  font-size: 45px;
 }
 @media (max-width: 576px) {
   .menu .tarjetas .tarjetita p {
@@ -405,160 +420,38 @@ h1 {
 .menu .tarjetas .tarjetita .p-te {
   font-size: 14px;
 }
+.menu .tarjetas .tarjetita .btn {
+  border: none;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.menu .tarjetas .tarjetita .imagen-tienda {
+  width: 80px;
+}
+.menu .tarjetas .tarjetita .boton-tienda {
+  background-color: white;
+  border: 2px solid rgba(190, 132, 57, 0.9254901961);
+  margin-left: 26%;
+  padding: 0 !important;
+  margin-top: 20px;
+}
+.menu .tarjetas .tarjetita .boton-tienda a {
+  text-decoration: none;
+  color: black;
+}
+.menu .tarjetas .tarjetita .boton-tienda :hover {
+  background: rgba(190, 132, 57, 0.9254901961);
+  color: white;
+}
+.menu .tarjetas .tarjetita .producto-precio {
+  width: 100px;
+  font-size: 100px;
+}
 @media (max-width: 992px) {
   .menu .tarjetas {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0;
-  }
-}
-.menu .tarjetas-comida {
-  width: 100%;
-  height: inherit;
-  padding-left: 85px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-@media (max-width: 992px) {
-  .menu .tarjetas-comida {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-  }
-}
-.menu .tarjetas-comida .tarjetita-comida {
-  height: 150px;
-  width: 250px;
-  border: 1px solid black;
-  border-radius: 35px;
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  background-color: rgba(190, 132, 57, 0.9254901961);
-  transition: 0.5s;
-  box-shadow: 10px 5px 5px black;
-  margin-bottom: 30px;
-}
-@media (max-width: 576px) {
-  .menu .tarjetas-comida .tarjetita-comida {
-    display: flex;
-    flex-wrap: wrap;
-    width: 150px;
-    margin-left: 30px;
-  }
-}
-.menu .tarjetas-comida .tarjetita-comida h3 {
-  text-align: center;
-  width: 100%;
-  font-style: italic;
-}
-@media (max-width: 576px) {
-  .menu .tarjetas-comida .tarjetita-comida h3 {
-    font-size: 19px;
-  }
-}
-.menu .tarjetas-comida .tarjetita-comida img {
-  width: 100px;
-  height: 90px;
-}
-@media (max-width: 576px) {
-  .menu .tarjetas-comida .tarjetita-comida img {
-    width: 65px;
-    height: 90px;
-  }
-}
-.menu .tarjetas-comida .tarjetita-comida .imagen-d {
-  height: 90px;
-}
-.menu .tarjetas-comida .tarjetita-comida p {
-  display: flex;
-  font-size: 18px;
-}
-@media (max-width: 576px) {
-  .menu .tarjetas-comida .tarjetita-comida p {
-    font-size: 12px;
-  }
-}
-
-.registro {
-  padding-top: 50px;
-  height: 100%;
-  margin: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 100px;
-  justify-content: center;
-}
-.registro .formulario-resgistro {
-  width: 400px;
-  height: 100%;
-}
-.registro .tarjeta-registro {
-  width: 400px;
-  height: 550px;
-  margin: 10px;
-  border-radius: 5px;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-}
-.registro .tarjeta-registro:hover .cuadrado {
-  left: -250px;
-  top: -150px;
-  opacity: 1;
-}
-.registro .tarjeta-registro .cuadrado {
-  position: absolute;
-  width: 800px;
-  height: 800px;
-  background-color: rgba(224, 140, 29, 0.89);
-  top: -900px;
-  left: -900px;
-  transition: 1s;
-  transform: rotate(45deg);
-}
-.registro .tarjeta-registro img {
-  width: inherit;
-  height: inherit;
-  object-fit: cover;
-}
-.registro .tarjeta-registro .info {
-  width: inherit;
-  height: inherit;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  position: absolute;
-  flex-direction: column;
-  text-shadow: 3px 2px 2px #CE5937;
-  opacity: 0;
-  top: -25px;
-  transition: 1s;
-}
-.registro .tarjeta-registro .info:hover {
-  top: 0;
-  opacity: 1;
-}
-.registro .tarjeta-registro .info h2 {
-  font-size: 20px;
-}
-.registro .tarjeta-registro .info p {
-  font-size: 18px;
-}
-.registro .tarjeta-registro .info button {
-  width: 200px;
-}
-.registro .tarjeta-registro .info button a {
-  color: white;
-  text-decoration: none;
-}
-@media (max-width: 576px) {
-  .registro {
     padding-left: 0;
   }
 }
@@ -577,7 +470,7 @@ h1 {
   background-color: rgb(65, 62, 62);
 }
 
-.button, .registro .formulario-resgistro button {
+.button {
   width: 150px;
   cursor: pointer;
   background-color: black;
@@ -587,8 +480,80 @@ h1 {
   font-size: 16px;
   transition: 0, 5s;
 }
-.button:hover, .registro .formulario-resgistro button:hover {
+.button:hover {
   background-color: rgb(65, 62, 62);
+}
+
+.section-carrito {
+  width: 1350px;
+  align-items: center;
+  text-align: center;
+}
+.section-carrito .nav-carrito {
+  display: flex;
+  justify-content: start;
+  font-size: 30px;
+  margin-left: 510px;
+}
+.section-carrito .nav-carrito .p-total {
+  margin-left: 100px;
+}
+.section-carrito .nav-carrito-2 {
+  margin-left: 9px;
+  display: flex;
+  justify-content: space-between;
+}
+.section-carrito .tarjetita-carrito {
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: space-between;
+  background-color: grey;
+  font-size: 20px;
+  border: 1px solid black;
+  margin: 10px;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+.section-carrito .tarjetita-carrito .imagen-carrito {
+  align-items: center;
+  width: 80px;
+  height: 60px;
+}
+.section-carrito .tarjetita-carrito .titulo-carrito {
+  justify-content: start !important;
+  font-size: 20px;
+}
+
+.div-total {
+  gap: 20px;
+  display: flex;
+  justify-content: end;
+  font-size: 40px;
+  margin-right: 140px;
+}
+.div-total .finalizar {
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: white;
+  border: 2px solid rgba(190, 132, 57, 0.9254901961);
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.total-compra {
+  margin-left: 50%;
+  font-size: 50px;
+}
+
+.carrito-vacio {
+  font-size: 60px;
+}
+
+.eliminar {
+  background-color: white;
+  border-radius: 50%;
 }
 
 .blue {
