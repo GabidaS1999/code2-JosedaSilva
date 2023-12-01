@@ -1,0 +1,2 @@
+MIGAS CAFE POR GABRIEL DA SILVA
+En este proyecto se simula lo que sería una pagina de una cafetería, donde el cliente puede ver imagenes de los productos que ofrecemos en la galería y tambien tiene un apartado "Menú" deonde el cliente puede seleccioanr los productos y añadirlos al carrito donde en el carrito tiene la opcion de borrar producto, vaciar carrito completo o si asi lo prefiere finalizar la compra
